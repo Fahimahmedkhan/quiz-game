@@ -35,6 +35,9 @@
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
+.container p{
+    margin-bottom: 10px;
+}
 
 .container a{
   text-decoration: none;

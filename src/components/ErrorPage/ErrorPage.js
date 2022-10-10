@@ -5,7 +5,7 @@ import './ErrorPage.css';
 const ErrorPage = () => {
     return (
         <section className='body-container'>
-            <div class="container">
+            <div className="container">
                 <h2>Oops! Page not found.</h2>
                 <h1>404</h1>
                 <p>We can't find the page you're looking for.</p>
