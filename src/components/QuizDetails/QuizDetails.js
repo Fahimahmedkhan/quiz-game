@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Question from '../Question/Question';
+import { ToastContainer } from 'react-toastify';
 
 const QuizDetails = () => {
     const quizDetails = useLoaderData();
@@ -21,6 +22,7 @@ const QuizDetails = () => {
                         question={q}
                     ></Question>)
                 }
+                <ToastContainer></ToastContainer>
             </div>
             <div className='border-2 rounded-lg bg-red-300 h-28'>
                 <h1>{quizzes.name}</h1>
