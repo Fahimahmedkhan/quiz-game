@@ -11,15 +11,16 @@ const Question = ({ question }) => {
 
 
     return (
-        <div className='border-2 border-lg border-black rounded-lg m-4 drop-shadow-lg p-4'>
+        <div className='border-2 border-lg border-black rounded-lg m-4 drop-shadow-lg p-4 '>
             <div className='flex items-center justify-evenly'>
                 <h1 className='text-2xl'>{question.question}</h1>
                 <button onClick={notify} className='hover:text-orange-600'><EyeIcon className='w-6'></EyeIcon></button>
             </div>
-            <div className='grid grid-cols-2 gap-2 mt-4'>
+            <div className='grid grid-cols-2 gap-2 mt-4 pt-5 pb-5'>
                 {
                     options.map(option => <Option
                         option={option}
+                        correctAnswer={correctAnswer}
                     ></Option>)
                 }
             </div>

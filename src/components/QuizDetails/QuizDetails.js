@@ -5,12 +5,8 @@ import { ToastContainer } from 'react-toastify';
 
 const QuizDetails = () => {
     const quizDetails = useLoaderData();
-
     const quizzes = quizDetails.data;
-    // console.log(quizzes)
     const questions = quizzes.questions;
-    // console.log(questions)
-    // questions.map(question => console.log(question))
 
     return (
         <div className='grid grid-cols-3 gap-10 p-8'>
