@@ -3,7 +3,7 @@ import React from 'react';
 const Statistic = () => {
     return (
         <div>
-            <h1>This is Statistic comp</h1>
+            <h1>this is statistic</h1>
         </div>
     );
 };
