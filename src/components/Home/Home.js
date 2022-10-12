@@ -7,7 +7,7 @@ const Home = () => {
     const quizzes = loaderData.data;
 
     return (
-        <div className='grid grid-cols-2 gap-20 p-20'>
+        <div className='grid sm:grid-cols-1 lg:grid-cols-2 gap-20 p-20'>
             {
                 quizzes.map(quiz => <Quiz
                     key={quiz.id}

@@ -15,7 +15,7 @@ const Statistic = () => {
     const statistic = loaderData.data;
 
     return (
-        <div className='flex justify-center items-center m-10'>
+        <div className='flex justify-center items-center sm:m-0 lg:m-10'>
             <LineChart
                 width={800}
                 height={500}

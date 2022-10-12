@@ -2,7 +2,7 @@ import React from 'react';
 
 const Blog = () => {
     return (
-        <div className=" px-8 mx-auto mt-4 shadow lg:max-w-md">
+        <div className=" px-8 mx-auto mt-4 shadow sm:max-w-md md:max-w-md lg:max-w-md">
             <details className="p-4 rounded-lg">
                 <summary className="font-semibold">What is the purpose of React Router?</summary>
                 <div className="mt-3">
