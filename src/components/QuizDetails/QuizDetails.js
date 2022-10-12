@@ -2,6 +2,7 @@ import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Question from '../Question/Question';
 import { ToastContainer } from 'react-toastify';
+import { getFromDb } from '../../utilities/fakeDb';
 
 const QuizDetails = () => {
     const quizDetails = useLoaderData();
@@ -20,8 +21,11 @@ const QuizDetails = () => {
                 }
                 <ToastContainer></ToastContainer>
             </div>
-            <div className='border-2 rounded-lg bg-red-300 h-28'>
-                <h1>{quizzes.name}</h1>
+            <div className='border-2 rounded-lg bg-slate-700 h-60 text-white flex justify-center items-center'>
+                <div>
+                    <h1 className='text-5xl font-bold text-center mb-4'>{quizzes.name}</h1>
+                    <p className='text-3xl font-semibold'>Correct Answer Count: {getFromDb()}</p>
+                </div>
             </div>
         </div>
     );
